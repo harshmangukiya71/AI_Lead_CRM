@@ -15,5 +15,6 @@ export const env = {
   smtpUser: process.env.SMTP_USER ?? "",
   smtpPass: process.env.SMTP_PASS ?? "",
   port: toNumber(process.env.PORT, 4000),
-  frontendUrl: process.env.FRONTEND_URL ?? "http://localhost:5173"
+  frontendUrl: process.env.FRONTEND_URL ?? "http://localhost:5173",
+  vercelProjectName: process.env.VERCEL_PROJECT_NAME ?? "ai-lead-crm"
 };

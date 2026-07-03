@@ -2,7 +2,7 @@ import { type FormEvent, useState } from "react";
 import { z } from "zod";
 import toast from "react-hot-toast";
 import { Send } from "lucide-react";
-import { createLead } from "../api/client";
+import { createLead, getApiErrorMessage } from "../api/client";
 import type { CreateLeadPayload } from "../types/lead";
 
 const leadSchema = z.object({
@@ -59,7 +59,7 @@ export default function LeadForm() {
       toast.success("Lead captured, qualified, and acknowledged.");
       setValues(initialValues);
     } catch (error) {
-      toast.error("Could not submit the lead. Check the backend connection.");
+      toast.error(getApiErrorMessage(error, "Could not submit the lead."));
     } finally {
       setIsSubmitting(false);
     }
