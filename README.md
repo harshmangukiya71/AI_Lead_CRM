@@ -4,11 +4,9 @@ A full-stack lead capture and CRM application built for the Delipat AI Engineer 
 
 ## Submission Links
 
-- Frontend deployment: Add your Vercel URL here
+- Frontend deployment: https://ai-lead-crm-ten.vercel.app/
 - Backend deployment: https://ai-lead-crm-4anx.onrender.com
 - API base URL: https://ai-lead-crm-4anx.onrender.com/api
-- GitHub repository: Add your public GitHub URL here
-- Demo video: Add your Loom, YouTube, or Drive URL here
 
 ## Features
 
